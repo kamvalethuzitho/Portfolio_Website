@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kamvalethu Zitho | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    .hero {
+      background: linear-gradient(135deg, #fff0f6, #fdfdfd);
+    }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    }
+    .skill-icon {
+      color: #e7b8ae;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold text-pink-600">Kamvalethu Zitho</h1>
+      <nav>
+        <ul class="flex space-x-6 text-sm font-medium">
+          <li><a href="#home" class="hover:text-pink-500">Home</a></li>
+          <li><a href="#about" class="hover:text-pink-500">About</a></li>
+          <li><a href="#skills" class="hover:text-pink-500">Skills</a></li>
+          <li><a href="#projects" class="hover:text-pink-500">Projects</a></li>
+          <li><a href="#contact" class="hover:text-pink-500">Let's Connect</a></li>
+          <li><a href="blog.html" class="text-pink-700 hover:text-pink-500 font-medium">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero h-screen flex items-center justify-center text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl sm:text-5xl font-bold text-gray-800 mb-6 leading-tight">Welcome to My Portfolio</h2>
+      <p class="text-lg sm:text-xl text-gray-600 mb-8 max-w-xl mx-auto">
+        Full-stack Junior Developer & IT Support Specialist with a knack for solving real-world problems and delivering exceptional service.
+      </p>
+      <a href="#about" class="bg-pink-500 text-white px-6 py-3 rounded-full hover:bg-pink-600 transition duration-300">Learn More</a>
+    </div>
+  </section>
+
+  <section class="bg-white py-16 px-6 md:px-24" id="about">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
+      <!-- Profile Picture -->
+      <div class="w-60 h-60 flex-shrink-0 rounded-lg overflow-hidden shadow-lg">
+        <img src="img/My profile picture.png" alt="Kamvalethu Profile" class="object-cover w-full h-full" />
+      </div>
+  
+      <!-- About Me Text -->
+      <div class="max-w-xl text-gray-800">
+        <h2 class="text-3xl font-bold mb-4 text-pink-700">About Me</h2>
+        <p class="text-lg leading-relaxed">
+          I'm Kamvalethu, a passionate self-taught software developer and creative problem solver with a background in IT Support. I specialize in building sleek, responsive websites with clean code and a touch of elegance.
+        </p>
+        <p class="mt-4 text-lg leading-relaxed">
+          I love growing through learning and believe in empowering others by sharing knowledge — whether through building tutorials, designing interfaces, or collaborating on ideas. When I'm not coding, I enjoy designing, reading, and sipping berry smoothies 🍓
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-50 text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-gray-800 mb-10">Technical Skills</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Skill cards (unchanged for structure) -->
+        <!-- ... same card blocks ... -->
+        <!-- Keep your card content as it is — it's great -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-white text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-gray-800 mb-8">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Placeholder projects -->
+        <div class="card bg-white p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Personal Website</h3>
+          <p class="text-gray-600 mb-4">A responsive portfolio site built using HTML, Tailwind, and JavaScript.</p>
+          <a href="#" class="text-pink-500 hover:underline">View Live</a>
+        </div>
+        <div class="card bg-white p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Mini CRM System</h3>
+          <p class="text-gray-600 mb-4">Built with MERN stack to manage clients and communication records.</p>
+          <a href="#" class="text-pink-500 hover:underline">View Repo</a>
+        </div>
+        <div class="card bg-white p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Coming Soon</h3>
+          <p class="text-gray-600 mb-4">More projects currently in progress. Stay tuned!</p>
+          <a href="#" class="text-pink-500 hover:underline">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Let's Connect (Replaces Contact Form) -->
+  <section id="contact" class="py-20 bg-gray-50 text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-gray-800 mb-6">Let’s Connect</h2>
+      <p class="text-lg text-gray-600 max-w-xl mx-auto mb-8">
+        Interested in working together or just want to say hi? Feel free to connect with me through the platforms below:
+      </p>
+      <div class="flex justify-center space-x-6">
+        <a href="https://www.linkedin.com/in/kamvalethu-zitho-152751217/" target="_blank" class="text-gray-600 hover:text-pink-500 transition">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/kamvalethu" target="_blank" class="text-gray-600 hover:text-pink-500 transition">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/kamvalethu.zitho" target="_blank" class="text-gray-600 hover:text-pink-500 transition">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center text-sm text-gray-500">
+    <p>&copy; 2025 Kamvalethu Zitho. All rights reserved.</p>
+  </footer>
+</body>
+</html>
